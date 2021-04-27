@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body{
+  background-color: #212121;
+}
+
+.mapcard {
+  width: 420px;
+  height: 220px;
+  margin: 10px;
+  box-sizing: 0px 0px 10px 2px grey;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+}
+
+.ct,
+.t {
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0px;
+}
+.ct:hover,
+.t:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.4s;
+  color: #dadada;
+  font-size: 1.5em;
+}
+
+.t,
+.t:hover {
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.ct,
+.ct:hover {
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+  width: 100%;
+}
+
+.overbox {
+  margin-left: 20px;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: #fff;
+}
+.bymaps {
+  font-size: 0.75em;
+  font-weight: 200;
+}
+.rowTitle {
+  display: flex;
+  flex-direction: row;
+
+  font-size: 1.4em;
+}
+
+.rowmaps {
+  display: flex;
+  flex-direction: row;
+}
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+}
+.footer-content{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	text-align: center;
+	flex-direction: column;
+}
+.footer-content h3{
+	font-family: Permanent Marker;
+	font-size: 2em;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0;
+}
+.designer, .footer-text{
+	text-decoration: none;
+	color: #B44D4D;
+	font-size: 17px;
+	font-family: Reggae One;
+}
+.footer-text{
+  color: #fff;
+}
+.designer:hover{
+	transition: 0.5ms;
+	color: #993434;
+}
+.siteTitle{
+  width: 100%;
+  color: #fff;
+  font-family: Permanent Marker;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+.siteTitle > h2{
+   font-size: 2.6em;
+}
+hr{
+  color: #fff;
+  height: 10em;
+}
+
+@media screen and (max-width: 1200px){
+  .siteTitle{
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+  }
+  .siteTitle > h2{
+    font-size: 2.4em;
+  }
+  .rowmaps{
+    flex-direction: column;
+  }
+  footer{
+    position: relative;
+  }
+  .box{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .mapcard{
+    width: 300px;
+    height: 180px;
+  }
+  .ct, .t{
+    font-size: 1em;
+
+  }
+}
+  
+
