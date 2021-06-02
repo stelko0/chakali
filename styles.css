@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,600;1,300&family=Roboto&display=swap');
 
-body{
+body {
   background-color: #212121;
 }
-
+/* #212121 */
 .mapcard {
   width: 420px;
   height: 220px;
@@ -13,6 +15,29 @@ body{
   display: flex;
   flex-direction: row;
   border-radius: 20px;
+}
+.videoCard {
+  width: 570px;
+  height: 350px;
+  margin: 10px;
+}
+.kitLocationTitle {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  margin-left: 15px;
+}
+.locationCard {
+  background-size: cover;
+  margin-bottom: -5px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.place {
+  margin-left: 10px;
+  color: #fff;
 }
 
 .ct,
@@ -24,6 +49,7 @@ body{
   text-decoration: none;
   font-weight: 600;
   font-size: 0px;
+  font-family: 'Roboto', sans-serif;
 }
 .ct:hover,
 .t:hover {
@@ -73,90 +99,113 @@ body{
 .rowmaps {
   display: flex;
   flex-direction: row;
+  padding-left: 1em;
 }
 
-footer{
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #111;
-    height: auto;
-    width: 100%;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-}
-.footer-content{
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	text-align: center;
-	flex-direction: column;
-}
-.footer-content h3{
-	font-family: Permanent Marker;
-	font-size: 2em;
-	font-weight: 400;
-	text-transform: uppercase;
-	margin: 0;
-}
-.designer, .footer-text{
-	text-decoration: none;
-	color: #B44D4D;
-	font-size: 17px;
-	font-family: Reggae One;
-}
-.footer-text{
-  color: #fff;
-}
-.designer:hover{
-	transition: 0.5ms;
-	color: #993434;
-}
-.siteTitle{
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #111;
+  height: auto;
   width: 100%;
+  padding: 20px;
   color: #fff;
+  text-align: center;
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-align: center;
+  flex-direction: column;
+}
+.footer-content h3 {
   font-family: Permanent Marker;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-bottom: 0;
+  font-size: 2em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0;
 }
-.siteTitle > h2{
-   font-size: 2.6em;
+.designer,
+.footer-text {
+  text-decoration: none;
+  color: #b44d4d;
+  font-size: 17px;
+  font-family: Reggae One;
 }
-hr{
+.footer-text {
+  color: #fff;
+}
+.designer:hover {
+  transition: 0.5ms;
+  color: #993434;
+}
+
+hr {
   color: #fff;
   height: 10em;
 }
 
-@media screen and (max-width: 1200px){
-  .siteTitle{
+
+/* Bootstrap Edits */
+.bg-dark {
+  background-color: #2f2f2f !important;
+}
+.navbar-brand {
+  font-family: Permanent Marker;
+  font-size: 2.5em;
+}
+.nav-link {
+  font-size: 1.5em;
+  margin-top: 5px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+.container-lg{
+  margin: 0;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .siteTitle {
     padding-left: 0.5em;
     padding-top: 0.5em;
   }
-  .siteTitle > h2{
+  .siteTitle > h2 {
     font-size: 2.4em;
   }
-  .rowmaps{
+  .rowmaps {
     flex-direction: column;
+    padding-left: 10px;
   }
-  footer{
+  footer {
     position: relative;
   }
-  .box{
+  .box {
     text-align: center;
     justify-content: center;
     align-items: center;
   }
-  .mapcard{
+  .mapcard {
     width: 300px;
     height: 180px;
   }
-  .ct, .t{
+  .ct,
+  .t {
     font-size: 1em;
-
+  }
+  .kitLocationTitle{
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .videoCard{
+    height: 200px;
+    width: 300px;
+    margin: 0;
+  }
+  .place{
+    margin: 0;
   }
 }
-  
-
